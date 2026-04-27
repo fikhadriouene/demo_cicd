@@ -1,0 +1,17 @@
+name: 01 - Hello CI/CD
+
+on:
+  push:
+    branches:
+      - exercice1
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Message de bienvenue
+        run: echo "Bienvenue dans la CI/CD pour l'API de satisfaction !"
+
+      - name: Date et heure
+        run: date
